@@ -10,6 +10,7 @@ return [
     'Test\\V1\\Rest\\FooBar\\Controller' => [
         'collection' => [
             'GET' => [
+                'identifier' => 'listFooBar',
                 'description' => 'Collection FooBar GET!',
                 'request' => null,
                 'response' => '{
@@ -46,6 +47,7 @@ return [
 }',
             ],
             'POST' => [
+                'identifier' => null,
                 'description' => null,
                 'request' => '{
     "goober": "Example goober value",
@@ -57,21 +59,25 @@ return [
         ],
         'entity' => [
             'GET' => [
+                'identifier' => null,
                 'description' => null,
                 'request' => null,
                 'response' => null,
             ],
             'PATCH' => [
+                'identifier' => null,
                 'description' => null,
                 'request' => null,
                 'response' => null,
             ],
             'PUT' => [
+                'identifier' => null,
                 'description' => null,
                 'request' => null,
                 'response' => null,
             ],
             'DELETE' => [
+                'identifier' => null,
                 'description' => null,
                 'request' => null,
                 'response' => null,
@@ -85,6 +91,7 @@ return [
     ],
     'Test\\V1\\Rpc\\Ping\\Controller' => [
         'GET' => [
+            'identifier' => 'ping',
             'description' => 'Ping the API to see uptime and network lag',
             'request' => null,
             'response' => '{"ack": 123456789}',

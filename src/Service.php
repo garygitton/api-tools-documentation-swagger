@@ -262,6 +262,7 @@ class Service extends BaseService
     {
         return $this->cleanEmptyValues([
             'tags' => [$this->service->getName()],
+            'operationId' => $operation->getIdentifier(),
             'description' => $operation->getDescription(),
             'parameters' => $parameters,
             'produces' => $this->service->getRequestAcceptTypes(),

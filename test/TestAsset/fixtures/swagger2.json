@@ -283,6 +283,7 @@
         },
         "/foo-bar": {
             "get": {
+                "operationId": "listFooBar",
                 "tags": ["FooBar"],
                 "description": "Collection FooBar GET!",
                 "produces": [
@@ -759,6 +760,7 @@
         },
         "/ping": {
             "get": {
+                "operationId": "ping",
                 "tags": ["Ping"],
                 "description": "Ping the API to see uptime and network lag",
                 "produces": [
